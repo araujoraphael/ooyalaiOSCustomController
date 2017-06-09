@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2AACDD1EEB430000862D26 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BD2AACDC1EEB415300862D26 /* video.mp4 */; };
+		BD2AACE01EEB47B200862D26 /* OOImagesIOS7+Icons.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2AACDF1EEB47B200862D26 /* OOImagesIOS7+Icons.m */; };
 		BDF2A3221EEB295800C14FB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A3211EEB295800C14FB1 /* main.m */; };
 		BDF2A3251EEB295800C14FB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A3241EEB295800C14FB1 /* AppDelegate.m */; };
 		BDF2A3281EEB295800C14FB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A3271EEB295800C14FB1 /* ViewController.m */; };
 		BDF2A32B1EEB295800C14FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF2A3291EEB295800C14FB1 /* Main.storyboard */; };
 		BDF2A32D1EEB295800C14FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF2A32C1EEB295800C14FB1 /* Assets.xcassets */; };
 		BDF2A3301EEB295800C14FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF2A32E1EEB295800C14FB1 /* LaunchScreen.storyboard */; };
+		BDF2A3381EEB29F200C14FB1 /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3371EEB29F200C14FB1 /* OoyalaSDK.framework */; };
+		BDF2A33B1EEB2A3D00C14FB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A33A1EEB2A3D00C14FB1 /* UIKit.framework */; };
+		BDF2A33D1EEB2A4100C14FB1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A33C1EEB2A4100C14FB1 /* Security.framework */; };
+		BDF2A33F1EEB2A4600C14FB1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A33E1EEB2A4600C14FB1 /* QuartzCore.framework */; };
+		BDF2A3431EEB2A5100C14FB1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3401EEB2A5100C14FB1 /* CoreMedia.framework */; };
+		BDF2A3441EEB2A5100C14FB1 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3411EEB2A5100C14FB1 /* MediaAccessibility.framework */; };
+		BDF2A3451EEB2A5100C14FB1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3421EEB2A5100C14FB1 /* MediaPlayer.framework */; };
+		BDF2A3481EEB2A6500C14FB1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3461EEB2A6500C14FB1 /* AVFoundation.framework */; };
+		BDF2A3491EEB2A6500C14FB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3471EEB2A6500C14FB1 /* Foundation.framework */; };
+		BDF2A34B1EEB2A6F00C14FB1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A34A1EEB2A6F00C14FB1 /* CoreText.framework */; };
+		BDF2A34D1EEB2A7500C14FB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A34C1EEB2A7500C14FB1 /* CoreGraphics.framework */; };
+		BDF2A34F1EEB2A8700C14FB1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A34E1EEB2A8700C14FB1 /* CFNetwork.framework */; };
+		BDF2A3511EEB2A9400C14FB1 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3501EEB2A9400C14FB1 /* libxml2.tbd */; };
+		BDF2A3531EEB2A9A00C14FB1 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3521EEB2A9A00C14FB1 /* JavaScriptCore.framework */; };
+		BDF2A3551EEB2AA100C14FB1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3541EEB2AA100C14FB1 /* SystemConfiguration.framework */; };
+		BDF2A3571EEB2AA500C14FB1 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF2A3561EEB2AA500C14FB1 /* AVKit.framework */; };
+		BDF2A35C1EEB2ADB00C14FB1 /* CustomControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A3591EEB2ADB00C14FB1 /* CustomControlsView.m */; };
+		BDF2A35D1EEB2ADB00C14FB1 /* CustomControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A35B1EEB2ADB00C14FB1 /* CustomControlsViewController.m */; };
+		BDF2A3601EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A35F1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD2AACDC1EEB415300862D26 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		BD2AACDE1EEB47B200862D26 /* OOImagesIOS7+Icons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OOImagesIOS7+Icons.h"; sourceTree = "<group>"; };
+		BD2AACDF1EEB47B200862D26 /* OOImagesIOS7+Icons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OOImagesIOS7+Icons.m"; sourceTree = "<group>"; };
 		BDF2A31D1EEB295800C14FB1 /* OoyalaCustomControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OoyalaCustomControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF2A3211EEB295800C14FB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDF2A3231EEB295800C14FB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +50,28 @@
 		BDF2A32C1EEB295800C14FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDF2A32F1EEB295800C14FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDF2A3311EEB295800C14FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF2A3371EEB29F200C14FB1 /* OoyalaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OoyalaSDK.framework; sourceTree = "<group>"; };
+		BDF2A33A1EEB2A3D00C14FB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BDF2A33C1EEB2A4100C14FB1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BDF2A33E1EEB2A4600C14FB1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BDF2A3401EEB2A5100C14FB1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BDF2A3411EEB2A5100C14FB1 /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		BDF2A3421EEB2A5100C14FB1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BDF2A3461EEB2A6500C14FB1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BDF2A3471EEB2A6500C14FB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BDF2A34A1EEB2A6F00C14FB1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		BDF2A34C1EEB2A7500C14FB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BDF2A34E1EEB2A8700C14FB1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BDF2A3501EEB2A9400C14FB1 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		BDF2A3521EEB2A9A00C14FB1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		BDF2A3541EEB2AA100C14FB1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BDF2A3561EEB2AA500C14FB1 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		BDF2A3581EEB2ADB00C14FB1 /* CustomControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomControlsView.h; sourceTree = "<group>"; };
+		BDF2A3591EEB2ADB00C14FB1 /* CustomControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomControlsView.m; sourceTree = "<group>"; };
+		BDF2A35A1EEB2ADB00C14FB1 /* CustomControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomControlsViewController.h; sourceTree = "<group>"; };
+		BDF2A35B1EEB2ADB00C14FB1 /* CustomControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomControlsViewController.m; sourceTree = "<group>"; };
+		BDF2A35E1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomControlsPlayerViewController.h; sourceTree = "<group>"; };
+		BDF2A35F1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomControlsPlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +79,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF2A3571EEB2AA500C14FB1 /* AVKit.framework in Frameworks */,
+				BDF2A3551EEB2AA100C14FB1 /* SystemConfiguration.framework in Frameworks */,
+				BDF2A3531EEB2A9A00C14FB1 /* JavaScriptCore.framework in Frameworks */,
+				BDF2A3511EEB2A9400C14FB1 /* libxml2.tbd in Frameworks */,
+				BDF2A34F1EEB2A8700C14FB1 /* CFNetwork.framework in Frameworks */,
+				BDF2A3431EEB2A5100C14FB1 /* CoreMedia.framework in Frameworks */,
+				BDF2A34D1EEB2A7500C14FB1 /* CoreGraphics.framework in Frameworks */,
+				BDF2A34B1EEB2A6F00C14FB1 /* CoreText.framework in Frameworks */,
+				BDF2A3481EEB2A6500C14FB1 /* AVFoundation.framework in Frameworks */,
+				BDF2A3491EEB2A6500C14FB1 /* Foundation.framework in Frameworks */,
+				BDF2A3441EEB2A5100C14FB1 /* MediaAccessibility.framework in Frameworks */,
+				BDF2A3451EEB2A5100C14FB1 /* MediaPlayer.framework in Frameworks */,
+				BDF2A33F1EEB2A4600C14FB1 /* QuartzCore.framework in Frameworks */,
+				BDF2A33D1EEB2A4100C14FB1 /* Security.framework in Frameworks */,
+				BDF2A33B1EEB2A3D00C14FB1 /* UIKit.framework in Frameworks */,
+				BDF2A3381EEB29F200C14FB1 /* OoyalaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +106,7 @@
 			children = (
 				BDF2A31F1EEB295800C14FB1 /* OoyalaCustomControllers */,
 				BDF2A31E1EEB295800C14FB1 /* Products */,
+				BDF2A3391EEB2A3C00C14FB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +121,13 @@
 		BDF2A31F1EEB295800C14FB1 /* OoyalaCustomControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BD2AACDC1EEB415300862D26 /* video.mp4 */,
+				BDF2A35E1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.h */,
+				BDF2A35F1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m */,
+				BDF2A3581EEB2ADB00C14FB1 /* CustomControlsView.h */,
+				BDF2A3591EEB2ADB00C14FB1 /* CustomControlsView.m */,
+				BDF2A35A1EEB2ADB00C14FB1 /* CustomControlsViewController.h */,
+				BDF2A35B1EEB2ADB00C14FB1 /* CustomControlsViewController.m */,
 				BDF2A3231EEB295800C14FB1 /* AppDelegate.h */,
 				BDF2A3241EEB295800C14FB1 /* AppDelegate.m */,
 				BDF2A3261EEB295800C14FB1 /* ViewController.h */,
@@ -66,7 +136,10 @@
 				BDF2A32C1EEB295800C14FB1 /* Assets.xcassets */,
 				BDF2A32E1EEB295800C14FB1 /* LaunchScreen.storyboard */,
 				BDF2A3311EEB295800C14FB1 /* Info.plist */,
+				BDF2A3371EEB29F200C14FB1 /* OoyalaSDK.framework */,
 				BDF2A3201EEB295800C14FB1 /* Supporting Files */,
+				BD2AACDE1EEB47B200862D26 /* OOImagesIOS7+Icons.h */,
+				BD2AACDF1EEB47B200862D26 /* OOImagesIOS7+Icons.m */,
 			);
 			path = OoyalaCustomControllers;
 			sourceTree = "<group>";
@@ -77,6 +150,28 @@
 				BDF2A3211EEB295800C14FB1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDF2A3391EEB2A3C00C14FB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDF2A3561EEB2AA500C14FB1 /* AVKit.framework */,
+				BDF2A3541EEB2AA100C14FB1 /* SystemConfiguration.framework */,
+				BDF2A3521EEB2A9A00C14FB1 /* JavaScriptCore.framework */,
+				BDF2A3501EEB2A9400C14FB1 /* libxml2.tbd */,
+				BDF2A34E1EEB2A8700C14FB1 /* CFNetwork.framework */,
+				BDF2A34C1EEB2A7500C14FB1 /* CoreGraphics.framework */,
+				BDF2A34A1EEB2A6F00C14FB1 /* CoreText.framework */,
+				BDF2A3461EEB2A6500C14FB1 /* AVFoundation.framework */,
+				BDF2A3471EEB2A6500C14FB1 /* Foundation.framework */,
+				BDF2A3401EEB2A5100C14FB1 /* CoreMedia.framework */,
+				BDF2A3411EEB2A5100C14FB1 /* MediaAccessibility.framework */,
+				BDF2A3421EEB2A5100C14FB1 /* MediaPlayer.framework */,
+				BDF2A33E1EEB2A4600C14FB1 /* QuartzCore.framework */,
+				BDF2A33C1EEB2A4100C14FB1 /* Security.framework */,
+				BDF2A33A1EEB2A3D00C14FB1 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +236,7 @@
 				BDF2A3301EEB295800C14FB1 /* LaunchScreen.storyboard in Resources */,
 				BDF2A32D1EEB295800C14FB1 /* Assets.xcassets in Resources */,
 				BDF2A32B1EEB295800C14FB1 /* Main.storyboard in Resources */,
+				BD2AACDD1EEB430000862D26 /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF2A3281EEB295800C14FB1 /* ViewController.m in Sources */,
+				BDF2A35C1EEB2ADB00C14FB1 /* CustomControlsView.m in Sources */,
 				BDF2A3251EEB295800C14FB1 /* AppDelegate.m in Sources */,
 				BDF2A3221EEB295800C14FB1 /* main.m in Sources */,
+				BDF2A3601EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m in Sources */,
+				BD2AACE01EEB47B200862D26 /* OOImagesIOS7+Icons.m in Sources */,
+				BDF2A35D1EEB2ADB00C14FB1 /* CustomControlsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MFV828C5Z2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OoyalaCustomControllers",
+				);
 				INFOPLIST_FILE = OoyalaCustomControllers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.araujoraphael.OoyalaCustomControllers;
@@ -288,6 +392,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MFV828C5Z2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OoyalaCustomControllers",
+				);
 				INFOPLIST_FILE = OoyalaCustomControllers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.araujoraphael.OoyalaCustomControllers;
@@ -314,6 +422,7 @@
 				BDF2A3361EEB295800C14FB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

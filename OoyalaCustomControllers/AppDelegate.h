@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <OoyalaSDK/OoyalaSDK.h>
+#import "OOImagesIOS7+Icons.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic,assign) int count;
 
 @end
 
