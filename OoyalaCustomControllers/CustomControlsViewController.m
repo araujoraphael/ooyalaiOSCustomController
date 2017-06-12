@@ -39,7 +39,7 @@
   [self initializeFullscreenControls];
 
   [self initializeInlineControls];
-
+    
   [super viewDidLoad];
 }
 
@@ -60,6 +60,19 @@
   [super viewDidLoad];
 
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onAdsLoaded:) name:OOOoyalaPlayerAdsLoadedNotification object:self.player];
+    
+    for(UIView *subView in [self.view subviews]) {
+        if([[subView class] isKindOfClass: [UILabel class]] ) {
+            [(UILabel *)subView setTextColor:[UIColor whiteColor]];
+        }
+    }
+    
+    for(UIView *subView in [self.controls.scrubberSlider.scrubber subviews]) {
+        if([[subView class] isKindOfClass: [UILabel class]] ) {
+            [(UILabel *)subView setTextColor:[UIColor whiteColor]];
+        }
+    }
+  
 }
 
 -(void)onAdsLoaded:(NSNotification*)notification {
@@ -239,6 +252,15 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    NSLog(@">>> player frame %f, %f, %f, %f", self.player.view.frame.origin.x, self.player.view.frame.origin.y, self.player.view.frame.size.width, self.player.view.frame.size.height);
+    
+//        NSLog(@">>> player controls frame %f, %f, %f, %f", self.player.controls.frame.origin.x, self.player.view.frame.origin.y, self.player.view.frame.size.width, self.player.view.frame.size.height);
+
+    NSLog(@">>> player frame %f, %f, %f, %f", self.player.view.frame.origin.x, self.player.view.frame.origin.y, self.player.view.frame.size.width, self.player.view.frame.size.height);
+    NSLog(@">>> navigationbar frame %f, %f, %f, %f", self.controls.navigationBar.frame.origin.x, self.controls.navigationBar.frame.origin.y, self.controls.navigationBar.frame.size.width, self.controls.navigationBar.frame.size.height);
+//    self.controls.navigationBar.backgroundColor = [UIColor purpleColor];
+    
+    NSLog(@">>> Controls frame %f, %f, %f, %f", self.controls.frame.origin.x, self.controls.frame.origin.y, self.controls.frame.size.width, self.controls.frame.size.height);
   [self updateClosedCaptionsPosition];
 }
 

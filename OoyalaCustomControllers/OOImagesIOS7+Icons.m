@@ -10,7 +10,12 @@
 
 @implementation OOImagesIOS7
 + (UIImage *)playImage {
-    UIImage *play = [UIImage imageNamed:@"play-btn"];
+    UIImage *originalImage = [UIImage imageNamed:@"play-btn"];
+    CGSize destinationSize = CGSizeMake(32, 38);
+    UIGraphicsBeginImageContext(destinationSize);
+    [originalImage drawInRect:CGRectMake(0,0,destinationSize.width,destinationSize.height)];
+    UIImage *play = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
     return play;
 }
 
@@ -47,7 +52,14 @@
     return [UIImage imageNamed:@"maximize-btn"];
 }
 + (UIImage *)collapseImage {
-    return [UIImage imageNamed:@"maximize-btn"];
+    UIImage *originalImage = [UIImage imageNamed:@"maximize-btn"];
+    CGSize destinationSize = CGSizeMake(38, 36);
+    UIGraphicsBeginImageContext(destinationSize);
+    [originalImage drawInRect:CGRectMake(0,0,destinationSize.width,destinationSize.height)];
+    UIImage *maximize = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return maximize;
 }
 + (UIImage *)forwardImage {
     return [UIImage imageNamed:@"pause-btn"];
@@ -57,29 +69,36 @@
 }
 
 + (UIImage *)thumbImage {
-    return [UIImage imageNamed:@"scrubberHandler"];
+    UIImage *originalImage = [UIImage imageNamed:@"scrubberHandler"];
+    CGSize destinationSize = CGSizeMake(48, 48);
+    UIGraphicsBeginImageContext(destinationSize);
+    [originalImage drawInRect:CGRectMake(0,0,destinationSize.width,destinationSize.height)];
+    UIImage *thumbImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return thumbImage;
 }
 + (UIImage *)routeImage {
-    return [UIImage imageNamed:@"pause-btn"];
+    return [UIImage imageNamed:@"line"];
 }
 + (UIImage *)routeOnImage {
-    return [UIImage imageNamed:@"pause-btn"];
+    return [UIImage imageNamed:@"line"];
 }
 
 + (UIImage *) castOffImage {
-    return [UIImage imageNamed:@"pause-btn"];
+    return [UIImage imageNamed:@"line"];
 }
 + (UIImage *) castOnImage {
-    return [UIImage imageNamed:@"pause-btn"];
+    return [UIImage imageNamed:@"line"];
 }
 + (UIImage *) castOn0Image {
-    return [UIImage imageNamed:@"pause-btn"];
+    return [UIImage imageNamed:@"line"];
 }
 + (UIImage *) castOn1Image {
-    return [UIImage imageNamed:@"pause-btn"];
+    return [UIImage imageNamed:@"line"];
 }
 + (UIImage *) castOn2Image {
-    return [UIImage imageNamed:@"pause-btn"];
+    return [UIImage imageNamed:@"line"];
 }
 + (UIImage *) volumeImage {
     return [UIImage imageNamed:@"pause-btn"];

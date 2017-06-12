@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD2AACDD1EEB430000862D26 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BD2AACDC1EEB415300862D26 /* video.mp4 */; };
 		BD2AACE01EEB47B200862D26 /* OOImagesIOS7+Icons.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2AACDF1EEB47B200862D26 /* OOImagesIOS7+Icons.m */; };
 		BDF2A3221EEB295800C14FB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A3211EEB295800C14FB1 /* main.m */; };
 		BDF2A3251EEB295800C14FB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A3241EEB295800C14FB1 /* AppDelegate.m */; };
@@ -34,10 +33,11 @@
 		BDF2A35C1EEB2ADB00C14FB1 /* CustomControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A3591EEB2ADB00C14FB1 /* CustomControlsView.m */; };
 		BDF2A35D1EEB2ADB00C14FB1 /* CustomControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A35B1EEB2ADB00C14FB1 /* CustomControlsViewController.m */; };
 		BDF2A3601EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2A35F1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m */; };
+		BDFC48981EEE14E400F8DE8F /* video_.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDFC48971EEE14A400F8DE8F /* video_.mp4 */; };
+		BDFC48991EEE14E700F8DE8F /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDFC48961EEE137300F8DE8F /* video2.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BD2AACDC1EEB415300862D26 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		BD2AACDE1EEB47B200862D26 /* OOImagesIOS7+Icons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OOImagesIOS7+Icons.h"; sourceTree = "<group>"; };
 		BD2AACDF1EEB47B200862D26 /* OOImagesIOS7+Icons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OOImagesIOS7+Icons.m"; sourceTree = "<group>"; };
 		BDF2A31D1EEB295800C14FB1 /* OoyalaCustomControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OoyalaCustomControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +72,8 @@
 		BDF2A35B1EEB2ADB00C14FB1 /* CustomControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomControlsViewController.m; sourceTree = "<group>"; };
 		BDF2A35E1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomControlsPlayerViewController.h; sourceTree = "<group>"; };
 		BDF2A35F1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomControlsPlayerViewController.m; sourceTree = "<group>"; };
+		BDFC48961EEE137300F8DE8F /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		BDFC48971EEE14A400F8DE8F /* video_.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,8 @@
 		BDF2A31F1EEB295800C14FB1 /* OoyalaCustomControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BD2AACDC1EEB415300862D26 /* video.mp4 */,
+				BDFC48961EEE137300F8DE8F /* video2.mp4 */,
+				BDFC48971EEE14A400F8DE8F /* video_.mp4 */,
 				BDF2A35E1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.h */,
 				BDF2A35F1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m */,
 				BDF2A3581EEB2ADB00C14FB1 /* CustomControlsView.h */,
@@ -236,7 +239,8 @@
 				BDF2A3301EEB295800C14FB1 /* LaunchScreen.storyboard in Resources */,
 				BDF2A32D1EEB295800C14FB1 /* Assets.xcassets in Resources */,
 				BDF2A32B1EEB295800C14FB1 /* Main.storyboard in Resources */,
-				BD2AACDD1EEB430000862D26 /* video.mp4 in Resources */,
+				BDFC48991EEE14E700F8DE8F /* video2.mp4 in Resources */,
+				BDFC48981EEE14E400F8DE8F /* video_.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -363,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,6 +385,7 @@
 					"$(PROJECT_DIR)/OoyalaCustomControllers",
 				);
 				INFOPLIST_FILE = OoyalaCustomControllers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.araujoraphael.OoyalaCustomControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +402,7 @@
 					"$(PROJECT_DIR)/OoyalaCustomControllers",
 				);
 				INFOPLIST_FILE = OoyalaCustomControllers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.araujoraphael.OoyalaCustomControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";

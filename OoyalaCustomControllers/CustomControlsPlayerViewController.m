@@ -49,7 +49,6 @@
     // Use our CustomControlsViewController as the InlineViewController
     [self.ooyalaPlayerViewController setInlineViewController:[[CustomControlsViewController alloc] initWithControlsType:OOOoyalaPlayerControlTypeInline player:self.ooyalaPlayerViewController.player overlay:nil delegate:self.ooyalaPlayerViewController]];
     
-    
     [[NSNotificationCenter defaultCenter] addObserver: self
                                              selector:@selector(notificationHandler:)
                                                  name:nil
@@ -67,7 +66,7 @@
     [self.playerView addSubview:_ooyalaPlayerViewController.view];
     [self.ooyalaPlayerViewController.view setFrame:self.playerView.bounds];
     
-    NSURL *videoURL =  [[NSBundle mainBundle] URLForResource:@"video"
+    NSURL *videoURL =  [[NSBundle mainBundle] URLForResource:@"video2"
                             withExtension:@"mp4"
                              subdirectory:@""];
     
