@@ -49,6 +49,8 @@
     // Use our CustomControlsViewController as the InlineViewController
     [self.ooyalaPlayerViewController setInlineViewController:[[CustomControlsViewController alloc] initWithControlsType:OOOoyalaPlayerControlTypeInline player:self.ooyalaPlayerViewController.player overlay:nil delegate:self.ooyalaPlayerViewController]];
     
+ [self.ooyalaPlayerViewController setFullScreenViewController:[[CustomControlsViewController alloc] initWithControlsType:OOOoyalaPlayerControlTypeInline player:self.ooyalaPlayerViewController.player overlay:nil delegate:self.ooyalaPlayerViewController]];
+    
     [[NSNotificationCenter defaultCenter] addObserver: self
                                              selector:@selector(notificationHandler:)
                                                  name:nil
@@ -73,6 +75,7 @@
     NSLog(@">>>> VIDEO %@", videoURL);
     
     OOStream *stream = [[OOStream alloc] initWithUrl:videoURL deliveryType:OO_DELIVERY_TYPE_MP4];
+
     OOUnbundledVideo *video = [[OOUnbundledVideo alloc] initWithUnbundledStreams:[NSArray arrayWithObjects:stream, nil]];
     [_ooyalaPlayerViewController.player setUnbundledVideo:video];
     

@@ -70,7 +70,7 @@
 
 + (UIImage *)thumbImage {
     UIImage *originalImage = [UIImage imageNamed:@"scrubberHandler"];
-    CGSize destinationSize = CGSizeMake(48, 48);
+    CGSize destinationSize = CGSizeMake(24, 24);
     UIGraphicsBeginImageContext(destinationSize);
     [originalImage drawInRect:CGRectMake(0,0,destinationSize.width,destinationSize.height)];
     UIImage *thumbImage = UIGraphicsGetImageFromCurrentImageContext();

@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <OoyalaSDK/OoyalaSDK.h>
+#import "CustomControlsView.h"
 
-@interface CustomControlsViewController : OOControlsViewController
+@interface CustomControlsViewController : OOControlsViewController <CustomControlsViewDelegate>
 @end

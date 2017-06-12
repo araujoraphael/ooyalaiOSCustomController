@@ -125,6 +125,8 @@
 			children = (
 				BDFC48961EEE137300F8DE8F /* video2.mp4 */,
 				BDFC48971EEE14A400F8DE8F /* video_.mp4 */,
+				BD2AACDE1EEB47B200862D26 /* OOImagesIOS7+Icons.h */,
+				BD2AACDF1EEB47B200862D26 /* OOImagesIOS7+Icons.m */,
 				BDF2A35E1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.h */,
 				BDF2A35F1EEB2AFE00C14FB1 /* CustomControlsPlayerViewController.m */,
 				BDF2A3581EEB2ADB00C14FB1 /* CustomControlsView.h */,
@@ -141,8 +143,6 @@
 				BDF2A3311EEB295800C14FB1 /* Info.plist */,
 				BDF2A3371EEB29F200C14FB1 /* OoyalaSDK.framework */,
 				BDF2A3201EEB295800C14FB1 /* Supporting Files */,
-				BD2AACDE1EEB47B200862D26 /* OOImagesIOS7+Icons.h */,
-				BD2AACDF1EEB47B200862D26 /* OOImagesIOS7+Icons.m */,
 			);
 			path = OoyalaCustomControllers;
 			sourceTree = "<group>";

@@ -9,8 +9,11 @@
 #import <OoyalaSDK/OoyalaSDK.h>
 #import <MediaPlayer/MediaPlayer.h>
 
+@protocol CustomControlsViewDelegate;
 
 @interface CustomControlsView : UIView
+
+@property (nonatomic, retain) id <CustomControlsViewDelegate> delegate;
 
 //Navigation Bar
 @property (nonatomic) UIToolbar *navigationBar;
@@ -21,6 +24,7 @@
 @property (nonatomic) OOClosedCaptionsButton *closedCaptionsButton;
 @property (nonatomic) UIBarButtonItem *videoGravityFillButton;
 @property (nonatomic) UIBarButtonItem *videoGravityFitButton;
+@property (nonatomic) UIButton *closeButton;
 
 
 @property (nonatomic) UIToolbar *bottomBarBackground;
@@ -38,4 +42,10 @@
 - (void)hide;
 - (void)show;
 - (void)changeDoneButtonLanguage:(NSString*)language;
+@end
+
+@protocol CustomControlsViewDelegate <NSObject>
+
+@optional
+- (void)closeButtonTapped;
 @end

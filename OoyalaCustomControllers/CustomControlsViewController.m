@@ -6,7 +6,6 @@
 //
 
 #import "CustomControlsViewController.h"
-#import "CustomControlsView.h"
 
 @interface CustomControlsViewController() {
   BOOL wasPlaying;
@@ -27,11 +26,17 @@
     LOG(@"viewDidLoad while player is nil");
     return;
   }
+    
+    if(UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
+        [self.controls.closeButton setHidden: NO];
+        [self.delegate setFullscreen:YES];
+    }
   
   self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
   
   //add controls
   self.controls = [[CustomControlsView alloc] initWithFrame:self.view.bounds];
+    self.controls.delegate = self;
     self.controls.tintColor = [UIColor whiteColor];
     self.view.tintColor = [UIColor whiteColor];
   [self initializeCoreControls];
@@ -49,8 +54,6 @@
   self.controls.closedCaptionsButton.target = self.delegate;
   self.controls.closedCaptionsButton.action = @selector(closedCaptionsSelector);
   
-  self.controls.fullscreenButton.target = self.delegate;
-  self.controls.fullscreenButton.action = @selector(showFullscreen);
 
   [self.controls.scrubberSlider.scrubber addTarget:self action:@selector(onScrubbingStarted) forControlEvents:UIControlEventTouchDown];
   [self.controls.scrubberSlider.scrubber addTarget:self action:@selector(onScrubbingChanged) forControlEvents:UIControlEventValueChanged];
@@ -252,19 +255,14 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    NSLog(@">>> player frame %f, %f, %f, %f", self.player.view.frame.origin.x, self.player.view.frame.origin.y, self.player.view.frame.size.width, self.player.view.frame.size.height);
-    
-//        NSLog(@">>> player controls frame %f, %f, %f, %f", self.player.controls.frame.origin.x, self.player.view.frame.origin.y, self.player.view.frame.size.width, self.player.view.frame.size.height);
-
-    NSLog(@">>> player frame %f, %f, %f, %f", self.player.view.frame.origin.x, self.player.view.frame.origin.y, self.player.view.frame.size.width, self.player.view.frame.size.height);
-    NSLog(@">>> navigationbar frame %f, %f, %f, %f", self.controls.navigationBar.frame.origin.x, self.controls.navigationBar.frame.origin.y, self.controls.navigationBar.frame.size.width, self.controls.navigationBar.frame.size.height);
-//    self.controls.navigationBar.backgroundColor = [UIColor purpleColor];
-    
-    NSLog(@">>> Controls frame %f, %f, %f, %f", self.controls.frame.origin.x, self.controls.frame.origin.y, self.controls.frame.size.width, self.controls.frame.size.height);
   [self updateClosedCaptionsPosition];
 }
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    if(UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        [self.controls.closeButton setHidden: NO];
+        [self.delegate setFullscreen:YES];
+    }
   [self updateClosedCaptionsPosition];
 }
 
@@ -306,6 +304,14 @@
 }
 
 - (void)setVolumeButtonShowing:(BOOL)isShowing {
+
+}
+
+#pragma mark -- CustomControViewDelegate
+-(void)closeButtonTapped {
+    [self.controls.closeButton setHidden: YES];
+    [self.delegate setFullscreen:NO];
+    [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationPortrait) forKey:@"orientation"];
 
 }
 @end
